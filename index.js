@@ -1,4 +1,4 @@
-const pgPromise = require('pg-promise');
+import pgPromise from 'pg-promise';
 
 export class DBConnection {
   constructor({host, port, user, password, database}) {

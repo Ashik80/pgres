@@ -9,7 +9,7 @@
     "postgres"
   ],
   "type": "module",
-  "author": "",
+  "author": "Ashikur Rahman",
   "license": "ISC",
   "repository": "Ashik80/pgres",
   "dependencies": {
