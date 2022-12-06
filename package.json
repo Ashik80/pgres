@@ -8,6 +8,7 @@
     "nodejs",
     "postgres"
   ],
+  "type": "module",
   "author": "",
   "license": "ISC",
   "repository": "Ashik80/pgres",
