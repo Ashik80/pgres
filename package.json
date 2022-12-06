@@ -10,7 +10,6 @@
   ],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "repository": "Ashik80/pgres",
   "dependencies": {
     "pg-promise": "^10.15.4"
