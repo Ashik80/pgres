@@ -1,11 +1,14 @@
-
 # PGres
+![GitHub package.json version](https://img.shields.io/github/package-json/v/Ashik80/pgres)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Ashik80/pgres)
+\
 
 ## Introduction
 
 `Pgres` is just another **ORM** used for querying postgres databases. It is made to make the setup process very easy. This package depends on the package `pg-promise`.
 
 **NOTE:** `Pgres` can only be used to do CRUD operations on the database. It does not support any schema migration.
+\
 
 ## Usage
 
@@ -97,6 +100,7 @@ await model.update(result);
 // Delete function is similar
 await model.delete(result);
 ```
+\
 
 ## Advanced Usage
 
