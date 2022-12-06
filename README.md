@@ -50,9 +50,9 @@ export class YourModel extends BaseModel {
 }
 ```
 
-You have some methods out-of-the-box, such as:
-`list`: gets all the data for a particular model
-`findById`: gets data by primary key which should be spelled 'id' in the database. Takes parameter `(id)`
-`save`: doesn't take any parameter. Saves data to the database after initialization
-`update`: takes model object as parameter. updates the object
-`delete`: takes model object as parameter. deletes the object
+You have some methods out-of-the-box, such as:\
+`list`: gets all the data for a particular model\
+`findById`: gets data by primary key which should be spelled 'id' in the database. Takes parameter `(id)`\
+`save`: doesn't take any parameter. Saves data to the database after initialization\
+`update`: takes model object as parameter. updates the object\
+`delete`: takes model object as parameter. deletes the object\
