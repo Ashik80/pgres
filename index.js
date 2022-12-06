@@ -1,6 +1,6 @@
 import pgPromise from 'pg-promise';
 
-class DBConnection {
+export class DBConnection {
   constructor({host, port, user, password, database}) {
     const pgp = pgPromise();
     const connectionString = `postgresql://${user}:${password}@${host}:${port}/${database}`;
@@ -8,7 +8,7 @@ class DBConnection {
   }
 }
 
-class BaseModel {
+export class BaseModel {
   constructor({ table, data, connection }) {
     this.connection = connection;
 

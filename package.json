@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Just another ORM",
   "main": "index.js",
-  "keywords": [],
+  "keywords": [
+    "orm",
+    "nodejs",
+    "postgres"
+  ],
   "author": "",
   "license": "ISC",
   "type": "module",
