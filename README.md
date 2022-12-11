@@ -24,6 +24,15 @@ const connection = new DBConnection({
 });
 ```
 
+--------------------------------------------------------------------------------------
+*** For **NextJS** applications, you might get a warning in your console,
+```bash
+  WARNING: Creating a duplicate database object for the same connection.
+```
+In this case use `DBConnectionSingleton` instead of `DBConnection`.
+
+--------------------------------------------------------------------------------------
+
 Make models according to your database by extending the model class from `BaseModel`:
 
 ```javascript

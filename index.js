@@ -1,10 +1,31 @@
 import pgPromise from 'pg-promise';
 
+const createSingleton = (name, create) => {
+    const s = Symbol.for(name);
+    let scope = global[s];
+    if (!scope) {
+        scope = {...create()};
+        global[s] = scope;
+    }
+    return scope;
+}
+
 export class DBConnection {
   constructor({host, port, user, password, database}) {
     const pgp = pgPromise();
     const connectionString = `postgresql://${user}:${password}@${host}:${port}/${database}`;
     this.db = pgp(connectionString);
+  }
+}
+
+export class DBConnectionSingleton {
+  constructor({host, port, user, password, database}) {
+    const pgp = pgPromise();
+    const connectionString = `postgresql://${user}:${password}@${host}:${port}/${database}`;
+    const { db } = createSingleton('db', () => ({
+      db: pgp(connectionString)
+    }));
+    this.db = db;
   }
 }
 
