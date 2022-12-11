@@ -1,6 +1,6 @@
 {
   "name": "@try-catch-80/pgres",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Just another ORM",
   "main": "index.js",
   "keywords": [
